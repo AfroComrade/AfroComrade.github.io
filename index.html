@@ -1,42 +1,343 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-<head>
-  <title>My first styled page</title>
-  	<link rel="stylesheet" href="styles/mystyles.css">
-  </head>
-
-<body>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
 
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Data Collection</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<ul class="navbar">
-  <li><a href="index.html">Home page</a>
-  <li><a href="Misc/topic.html">Technology/Topic</a>
-	<li><a href="Misc/opportunities.html">Opportunities</a>
-	<li><a href="Misc/risks.html">Risks</a>
-	<li><a href="Misc/choices.html">Choices</a>
-	<li><a href="Misc/ethics.html">Ethical Reflections</a>
-	<li><a href="Misc/references.html">References</a>
-   <li><a href="Misc/process.html">Process Support</a>
-</ul>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Main content -->
-<h1>CTiS: Impact of Technology Site</h1>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
 
 
-</ul><p>This mock-up site is intended to support your team project so you can take this as a set of files and as a starting point and adapt it to your preference. 
-It is built on a W3C site tutorial so does not claim to be flash, but now has an image, [of a paper we wrote a while back on CSED4G (Computing Education for the Social Good)]</p>
-<p>The site is not particularly well presented, but as the site uses HTML and has been styled with CSS it can be regarded as a <em>"minimum viable product"</em> for the purposes of this project&hellip;
-It has some default links, which you can take as a start for your site structure.  The <em>Process Support </em>Links provides guidance which will be needed for presenting your final project. </p>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
 
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 1 March 2021<br>
-  by Tony Clear.</address>
- 
-<p><em>thanks to W3C for tutorial and adapted code from <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html">Style Examples</a></p></em>
-<p><em>also thanks to WDN for HTML and CSS resources and any adapted code snippets from <a href= "https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network</a></p></em 
- 
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row">
+
+
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                    <li><a class="smoothscroll" href="#Topic">Topic</a></li>
+                    <li><a class="smoothscroll" href="#PartTwo">Opportunities</a></li>
+                    <li><a class="smoothscroll" href="#PartThree">Risks</a></li>
+					<li><a class="smoothscroll" href="#PartFour">Choices</a></li>
+                </ul>
+            </nav>
+
+            <a class="s-header__menu-toggle" href="#0" title="Menu">
+                <span class="s-header__menu-icon"></span>
+            </a>
+
+        </div> <!-- end row -->
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000">
+
+        <div class="s-home__content">
+
+            <div class="s-home__slider">
+
+                <div class="s-home__slide s-home__slide--1">
+                    <div class="row">
+                        <div class="column large-12 s-home__slide-text">
+                            <h2>
+                           Data Collection In Modern Society
+						   <span>Assignment 3: Team Project</span>
+                            </h2>
+                            <p style="color:#ffa64d">
+                            <b style="color:white">Full name:</b> Emmanuel Francis
+							<b style="color:White">ID:</b> 20123197
+							<b style="color:White">Email:</b> png7080@autuni.ac.nz
+                            </p>
+							<p style="color:#ffa64d">
+                            <b style="color:white">Full name:</b> Yeran Edmonds
+							<b style="color:White">ID:</b> 2
+							<b style="color:White">Email:</b> png7080@autuni.ac.nz
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end s-home__slide -->
+
+
+
+        <div class="s-home__nav-arrows">
+            <div class="s-home__arrow-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1004" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
+            </div>
+            <div class="s-home__arrow-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1004" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/></svg>
+            </div>
+        </div> <!-- end s-home__nav-arrows -->
+
+        <div class="s-home__line"></div>
+
+    </section> <!-- end s-home -->
+
+
+    <!-- Part One
+    ================================================== -->
+    <section id="Topic" class="s-PartOne target-section s-dark">
+
+        <div class="row section-head">
+            <div class="column large-3 medium-12" data-aos="fade-up"><br><br>
+                <h2>Topic : </h2><br>
+            </div>
+<br>
+            <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
+               <br>
+			<u><h5 style="color:#a0bdb7">Opportunities</h5></u>
+
+<h1>Opportunities afforded by Data Collection in modern society</h1>
+
+<p>Data collection has been pervasive in recent years. Private enterprise uses personal data for targeted content, to the extent that they trade and buy personal data. Despite this, the information gained from mass data collection is invaluable. This article is going to explore the value and opportunities granted by that information, particularly in the public domain. While the private sector uses personal data for profit, there are public and educational uses of data that include public statistics, opt-in data collection, and statistical analysis that can change modern society for the better. </p>
+
+<p>The first point to bring up is statistical analysis. In NZ, we have public access to statistics and insights through websites like StatsNZ, EducationCounts and IRD. Often, before we begin any venture, we need information. The statistics provided by these websites grant us that informed information and trends about our society and country so we know how to move forward. From these statistics, we are also more informed about issues and concerns beyond our personal bubble. For example, New Zealand is overrepresented in youth suicide rates, particularly for Maori peoples. 
+
+<br>
+
+
+<img src="images/SuicideRates.png" alt="Table chart of NZ Suicide Rates">
+<ul><li><i>Fig 1. 2020 Annual provisional suicide statistics.</li>
+
+<li>"The highest rate (of suicide), of  15.6 per 100,000 – nine times higher than in Portugal – is to be found in New Zealand" - Unicef (2017)</li></i></ul>
+<br>
+New Zealand also has underrepresentation for Maori people in educational attainment. The connections between these two are beyond the scope of this article, however this information gives us an insight into the challenges faced by marginalized groups in New Zealand. We can see evidence of attempts to change that, with programmes and scholarships intended to target these groups, and improve quality of life. These are the sorts of statistics we can use for informed decision making.</p>
+
+<p>The next point to bring up is opt-in data collection. While we have the General Data Protection Regulation from the EU to monitor and allow deletion of data, generally speaking we’re unaware of what data businesses are collecting from us. Exceptions to this are surveys, census and opt-in data collection. These are the bread and butter of public data collection, so that informed decisions can be made about the populace. An example of this is New Zealand's referendum on abortion and marijuana. Through collating people's political preferences, we can make change to move New Zealand forward. </p>
+<br><br>
+<img src="images/NZReferendum.png" alt="Abortion Referendum Results">
+<ul><li><i>Fig 2. Official results of the end of life choice referendum </li></i></ul>
+<br>
+<p>This wouldn't be possible without the data collected from surveys and census. While NZ's government had a decent idea about the direction this referendum would take, the information gleamed from this means they can make a more informed decision about policy going forward. Another great example of opt-in data collection is New Zealand's COVID tracing app of 2020. In a vigilant world where an epidemic can strike at any time, the ability to trace and track people that travel to different businesses is invaluable. NZ is fortunate enough to have both the population and the infrastructure to participate in the COVID tracking. Making covid tracing mandatory for businesses was a big step in keeping on top of this. With the data collected voluntarily from us, we can rapidly quell outbreaks as they come up. This kind of data collection is invaluable, and has left NZ as having one of the best COVID responses in the world.<br></p>
+
+<p>A third point to bring up is academic analysis. Raw statistics are valuable for information, but educated understanding of that information is what leads to understandable and digestable knowledge. And that can lead to change. A good example can be read in a study done in 2012 about the five personality traits, and how they most determine academic achievement. It includes internal and external motivations, but one of the biggest predictors of academic achievement is conscientiousness.</p>
+
+<br>
+<img src="images/PersonalityPredictor.png" alt="Personality Predictor Table">
+<ul><li><i>Fig 3. The effect of personality traits on academic performance: The mediating role of academic motivation (2012) </li></i></ul>
+
+
+<p>We can can see here, and in many other studies, the value of correlating and interpreting data. Through this, we can identify that becoming more conscientious can lead to higher grades. And we can know this, because of data collected by surveys and studies and then analyzed. Another good example is the study for optimism versus conscientiousness in the predictor for academic achievement.</p>
+
+<br>
+<br>
+<img src="images/ConscientiousnessVsOptimism.png" alt="Conscientiousness Vs Optimism Chart">
+<ul><li><i>Fig 4. Interaction effect of dispositional optimism and conscientiousness on students’ academic performance. (2019) </li></i></ul>
+<br>
+
+<p>Understanding and interpreting information is its own subset of skills and beyond the scope of this article. However, we can see and recognize the value in learning these correlations. Learning that conscientiousness is a valuable trait in academia means we learn to become conscientious ourselves, and make change necessary to learn and grow. Learning that optimism is an inverse predictor of performance in low-conscientious people means that those people who know they are less mindful can be sure to shore up their shortcomings. This information is invaluable for personal growth and achievement in academia. We can use this to alter our own behaviour or recognize behaviour in other people and help our individual communities grow.</p>
+
+<p> A final small point I want to bring up is medical data collection. COVID and suicide rates have already been mentioned, but a big key in improving life expectancy and quality of life is medical data collection. Water fluoridation is the example I want to mention here. NZ's Ministry of Health (2021) state that there is 40% less tooth decay afflicting young children and teenagers in areas with fluoridated water. We would not know that statistic, or the epidemic of tooth decay in New Zealand, were it not for data collection and aggregation of tooth decay. </p>
+
+<p>To finish this off, there is plenty of value in data collection in modern society. We can see the results of data collection to recognize over- or under-representation and make changes to improve them. We can use opt-in data collection to make policies and improve response time on national emergencies. We can also analyze and interpret data to make better and more informed decisions about ourselves and the populace. While data collection is definitely pervasive in the corporate world, the effects of social data collection cannot be understated. Knowing where the holes or the neglect are in ourselves and our communities means we gain the perspective to move forward knowingly in the world. And knowing where we excel or our communities thrive means we can learn and leap ahead those categories, or use them to prop up neglected groups until they are healed.</p> 			</div>
+        </div> <!-- end section-head -->
+
+        </div> <!-- end Part One-list -->
+
+    </section> <!-- end s-Part One -->
+
+
+    <!-- Part Two
+    ================================================== -->
+    <section id="PartTwo" class="s-PartTwo target-section s-dark"">
+
+        <div class="row section-head">
+            <div class="column large-3 medium-12" data-aos="fade-up">
+                <h2>Part 2</h2><br>
+            </div>
+
+            <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
+              
+			<u><h5 style="color:#a0bdb7">Question 1</u> :Setting up three different Linux operating system</h5>
+			<h6 style="color:#a0bdb7">Ubuntu</h6>
+
+<img src="images/test/Part2/Ubuntu1.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Ubuntu2.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Ubuntu3.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+	 	 	 	 	 	 	 
+<h6 style="color:#a0bdb7">Parrot</h6>
+
+<img src="images/test/Part2/Parrot1.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Parrot2.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Parrot3.png" alt="Part 2 - Questions and Answers" width="880" height="635"> 	 	 	 
+
+<h6 style="color:#a0bdb7">Zorin</h6>
+
+<img src="images/test/Part2/Zorin1.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Zorin2.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/Zorin3.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+               
+			 <u><h5 style="color:#a0bdb7">Question 2</u> : Manipulate directory structures in Unix/Linux </h5>  
+<img src="images/test/Part2/q2a.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/q2b.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/q2c.png" alt="Part 2 - Questions and Answers" width="880" height="635">			   
+<img src="images/test/Part2/q2d.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part2/q2e.png" alt="Part 2 - Questions and Answers" width="880" height="635">
+			   
+            </div>
+        </div> <!-- end section-head -->
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- Part Three
+    ================================================== -->
+    <section id="PartThree" class="s-PartThree target-section s-dark">
+
+        <div class="row section-head">
+            <div class="column large-3 medium-12" data-aos="fade-up"><br>
+                <h2>Part 3</h2><br>
+            </div>
+<br>
+            <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
+                <u><h5 style="color:#a0bdb7">Question 1</u> : Collect dataset / photos </h5>
+
+<br>
+<img src="images/test/Part3/q1a.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q1b.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q1c.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+	 	 	 	 	 	 	
+                <u><h5 style="color:#a0bdb7">Question 2</u> : Test the prediction performance of YOLO object detection system using images as the inputs</h5>							
+					<h6 style="color:#a0bdb7">Weight: yolov3_416</h6>           
+<img src="images/test/Part3/q2a1.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2a2.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2a3.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2a4.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2a5.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2a6.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<br>
+					<h6 style="color:#a0bdb7">Weight: yolov3_tiny</h6> 
+<img src="images/test/Part3/q2b1.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2b2.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2b3.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2b4.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2b5.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part3/q2b6.png" alt="Part 3 - Questions and Answers" width="880" height="635">
+
+                <u><h5 style="color:#a0bdb7">Question3</u> : Test the prediction performance of YOLO object detection system using video as the input </h5>							
+					<h6 style="color:#a0bdb7">Weight: yolov3_416</h6>  
+
+<iframe width="640" height="80" src="https://www.youtube.com/embed/8ziTCNnBRyY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+								<h6 style="color:#a0bdb7">Weight: yolov3_tiny</h6>  
+<iframe width="640" height="880" src="https://www.youtube.com/embed/XsTVMugKlrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> <!-- end section-head -->
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+	
+	
+	
+	<section id="PartFour" class="s-PartOne target-section s-dark">
+
+        <div class="row section-head">
+            <div class="column large-3 medium-12" data-aos="fade-up"><br><br>
+                <h2>Choices</h2><br>
+            </div>
+<br>
+            <div class="column large-8 medium-12 align-x-right" data-aos="fade-up">
+               <br>
+			<u><h5 style="color:#a0bdb7">Question 1</h5></u>
+
+<img src="images/test/Part1/Part1 q1.png" alt="Part 1 - Questions and Answers" width="880" height="635">
+<br><p style="color:#6">Working:</p>
+
+<img src="images/test/Part1/eviq1.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">
+
+		<u><h5 style="color:#a0bdb7">Question 2</h5></u>
+
+<img src="images/test/Part1/Part1 q2.png" alt="Part 1 - Questions and Answers" width="880" height="635">
+
+<br><p style="color:#6">Working:</p>
+
+<img src="images/test/Part1/eviq2.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">
+<img src="images/test/Part1/eviq2b.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">
+<br>		<u><h5 style="color:#a0bdb7">Question 3</h5></u>
+
+<img src="images/test/Part1/Part1 q3.png" alt="Part 1 - Questions and Answers" width="880" height="635">
+
+<br><p style="color:#6">Working:</p>
+
+<img src="images/test/Part1/eviq3.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">
+
+<br>		<u><h5 style="color:#a0bdb7">Question 4</h5></u>
+
+<img src="images/test/Part1/Part1 q4.png" alt="Part 1 - Questions and Answers" width="880" height="635">
+        <br><p style="color:#6">Working:</p>
+
+<img src="images/test/Part1/eviq4.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">    
+		
+<br>		<u><h5 style="color:#a0bdb7">Question 5</h5></u>
+
+<img src="images/test/Part1/Part1 q5.png" alt="Part 1 - Questions and Answers" width="880" height="635">			
+			
+<br><p style="color:#6">Working:</p>
+
+<img src="images/test/Part1/eviq5.jpg" alt="Part 1 - Questions and Answers" width="880" height="635">			
+			</div>
+        </div> <!-- end section-head -->
+
+        </div> <!-- end Part One-list -->
+
+    </section> <!-- end s-Part One -->
+
+
+
+
+
+    
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
