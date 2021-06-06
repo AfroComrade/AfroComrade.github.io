@@ -335,7 +335,8 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari. */
 
 h1 {
-    font-size: 2em;
+    color: white;
+	font-size: 2em;
     margin: 0.67em 0;
 }
 
@@ -654,7 +655,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 p {
     font-size: inherit;
     text-rendering: optimizeLegibility;
-
+	
 }
 
 em, i {
@@ -1637,7 +1638,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: var(--font-2);
     font-weight: 600;
     font-style: normal;
-    color: var(--color-text-dark);
+    color: var(white);
     -webkit-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
@@ -1668,7 +1669,7 @@ h1, .h1 {
 @media screen and (max-width: 600px) {
     h1, .h1 {
         font-size: var(--text-xxxl);
-        line-height: var(--vspace-1_75);
+        line-height: var(--vspace-1_75);8
     }
 }
 
@@ -1963,34 +1964,34 @@ img.h-pull-left {
  * ## tables
  * ------------------------------------------------------------------- */
 table {
-    border-width: 0;
-    width: 100%;
-    max-width: 100%;
-    font-family: var(--font-1);
-    border-collapse: collapse;
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  background-color: var(--color-gray-18);
+  color: white;
 }
 
-th, td {
-    padding: var(--vspace-0_5) 3.2rem calc(var(--vspace-0_5) - .1rem);
-    text-align: left;
-    border-bottom: 1px solid var(--color-border);
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
 }
 
 th {
-    padding: var(--vspace-0_5) 3.2rem;
-    color: var(--color-text-dark);
-    font-family: var(--font-2);
-    font-weight: 600;
+  background-color: black;
 }
 
-th:first-child, td:first-child {
-    padding-left: 0;
+td {
+  text-align: center;
 }
 
-th:last-child, td:last-child {
-    padding-right: 0;
+tr:nth-child(even) td {
+  background-color: var(--color-gray-18);
 }
 
+tr:nth-child(odd) td {
+  background: #050505;
+}
 .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -2865,7 +2866,7 @@ input::-moz-focus-inner {
 }
 
 .pgn .current, .pgn .current:hover {
-    background-color: var(--color-gray-18);
+    background-color: var(--color-1);
     color: var(--color-white);
 }
 
